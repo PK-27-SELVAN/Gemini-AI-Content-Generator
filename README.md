@@ -16,3 +16,8 @@ This project is a Django-based web application that leverages Gemini AI to gener
 - Text and image generation using Gemini AI
 - Prompt-based content generation workflow
 - Clean and responsive UI built with Django templating
+
+# Screenshots
+![Search/Homepage](Screenshots/Search.png)
+![Results](Screenshots/Results.png)
+![History](Screenshots/History.png)
