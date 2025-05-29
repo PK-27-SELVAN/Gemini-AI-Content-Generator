@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}
+Results
+{% endblock %}
+{% block body %}
+<div class="container min-vh-100">
+    <div>
+        {% if result_text %}
+            <h2>Generated Text:</h2>
+            <p>{{ result_text }}</p>
+        {% endif %}
+    </div>
+    <div>
+        {% if image_base64 %}
+            <h2>Generated Image:</h2>
+            <img src="data:image/png;base64,{{ image_base64 }}" alt="Generated Image" class="image-fluid mx-auto d-block">
+        {% endif %}
+    </div>
+    <div>
+        {% if error %}
+            <p style="color:red;">{{ error }}</p>
+        {% endif %}
+    </div>
+    <div>
+        <a href="{% url 'search' %}" class="btn btn-warning">Return to Home</a>
+    </div>
+</div>
+{% endblock %}
