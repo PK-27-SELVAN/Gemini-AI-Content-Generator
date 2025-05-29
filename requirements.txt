@@ -1,0 +1,6 @@
+django
+pillow
+google-generativeai
+django-crispy-forms
+crispy-bootstrap5
+python-dotenv

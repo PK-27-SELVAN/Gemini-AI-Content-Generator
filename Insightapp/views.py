@@ -4,12 +4,9 @@ from .models import SearchHistory
 from django.views import View
 
 import google.generativeai as genai
-from django.http import HttpResponse, JsonResponse
-from django.views.decorators.csrf import csrf_exempt
 from PIL import Image
 from io import BytesIO
 import base64
-import json
 import os
 from dotenv import load_dotenv
 load_dotenv()
